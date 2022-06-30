@@ -1,0 +1,27 @@
+.form {
+  /* text-align: right; */
+  margin-left: 5px;
+}
+.label{
+  font-size: 12px;
+}
+.input{
+  width: 50px;
+}
+.card-btn {
+  background-color: #bb9b3d;
+  border-color: #312910ec;
+  font-size: 12px;
+  padding: 3px 5px;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+  display: block;
+ 
+
+}
+.card-btn:hover, .card-btn:active {
+  background-color: #4f4014;
+  border-color: #161207ec;
+}

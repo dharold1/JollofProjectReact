@@ -1,0 +1,82 @@
+@font-face {
+  font-family: lato;
+  src: url(../../assets/fonts/Lato/Lato-Black.ttf);
+  
+}
+
+@font-face {
+  font-family: monoton;
+  src: url(../../assets/fonts/monoton/Monoton-Regular.ttf);
+}
+
+@font-face {
+  font-family: jokerman;
+  src: url(../../assets/fonts/Jokerman-Font/Jokerman-Font.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  background-color: white;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  z-index: 50;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); */
+}
+.brand {
+  text-align: center;
+  margin: 10px;
+}
+.navbar-brand {
+  font-size: 28px;
+  font-family: 'monoton', sans-serif;
+  font-weight: 600;
+  background: linear-gradient(to right bottom, #fb9005, #666666);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.navbrand-sub {
+  margin-top: -1.5rem;
+  font-family: 'monoton';
+  font-weight: 700;
+  font-size: 20px;
+  background: linear-gradient(to right bottom, rgba(251, 144, 5, 0.652), rgba(165, 165, 165, 0.841));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.nav-options{
+  display: flex;
+
+}
+.nav-options li{
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-family: "lato";
+
+}
+.nav-btns{
+  list-style: none;
+  padding: 0.8rem;
+  background: linear-gradient(to right bottom, #fb9005, #666666);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.nav-btns:hover,
+.nav-btns:active {
+  background: linear-gradient(to right bottom, #583200, #353535);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

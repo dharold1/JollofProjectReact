@@ -1,0 +1,37 @@
+.contact {
+    background-image: linear-gradient(rgba(225, 225, 225, 0.556), rgba(225, 225, 225, 0.556));
+    background-color: #a48d0e;
+    justify-content: center;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, .2fr);
+}
+
+.col-1-of-3 {
+    padding-top: 12px;
+    /* width: calc((100% - 3 * 1rem)/4); */
+    /* width: 28rem; */
+}
+
+.col-1-of-3 h5 {
+    font-size: .9rem;
+    font-weight: 600;
+    color: #383838;
+}
+
+.col-1-of-3 li {
+    list-style: none;
+    margin-bottom: .7rem;
+    margin-left: -.05rem;
+}
+
+.col-1-of-3 li a {
+    text-decoration: none;
+    color: rgba(64, 63, 63, 0.857);
+    font-size: .7rem;
+    font-weight: 100;
+}
+
+.col-1-of-3 li a:hover, .col-1-of-3 li a:active, .col-1-of-3 li a:focus {
+    color: #1c1b1b;
+}
