@@ -35,14 +35,14 @@ export default function Contact() {
           <ul>
             <li>
               <a href="mailto:aspetcatering@gmail.com">
-                <img className={classes["small-icons"]} src={envelope}/>
+                <img className={classes["small-icons"]} src={envelope} alt={"envelop"}/>
                 aspetcatering@gmail.com
               </a>
             </li>
             <li>
               {" "}
               <a href="tel:+2348033032677">
-               <img className={classes["small-icons"]} src={phone}/>
+               <img className={classes["small-icons"]} src={phone} alt={"phone"}/>
                 +234 80 3303 2677
               </a>
             </li>
@@ -50,25 +50,25 @@ export default function Contact() {
               <address>
                 {" "}
                 <a href="https://g.co/kgs/Po6617">
-                 <img className={classes["small-icons"]} src={location}/> Villa 17
+                 <img className={classes["small-icons"]} src={location} alt={"location"}/> Villa 17
                   Old aprofim, life camp, Abuja
                 </a>
               </address>
             </li>
             <div className={classes["social"]}>
               <li>
-                <a href="#">
-                 <img className={classes["social-icons"]}  src={facebook}/>
+                <a href="facebook.com">
+                 <img className={classes["social-icons"]}  src={facebook} alt={"facebook logo"}/>
                 </a>
               </li>
               <li>
                 <a href="https://instagram.com/aspet_catering_service_ng?igshid=YmMyMTA2M2Y=">
-                  <img className={classes["social-icons"]}  src={instagram}/>
+                  <img className={classes["social-icons"]}  src={instagram} alt={"instagram logo"}/>
                 </a>
               </li>
               <li>
                 <a href="https://wa.me/+2348033032677">
-                  <img className={classes["social-icons"]}  src={whatsapp}/>
+                  <img className={classes["social-icons"]}  src={whatsapp} alt={"whatsapp logo"}/>
                 </a>
               </li>
             </div>

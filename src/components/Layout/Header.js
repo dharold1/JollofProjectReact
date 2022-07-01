@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import classes from "./Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
+import { Link } from "react-router";
 
 const Header = (props) => {
   return (
