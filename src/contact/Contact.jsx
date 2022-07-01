@@ -1,6 +1,11 @@
 import React, { Fragment } from "react";
 import classes from "./Contact.module.css";
-
+import facebook from '../assets/icons/facebook-f.svg'
+import whatsapp from '../assets/icons/whatsapp.svg'
+import instagram from '../assets/icons/instagram-square.svg'
+import envelope from '../assets/icons/envelope.svg'
+import phone from '../assets/icons/mobile-screen.svg'
+import location from '../assets/icons/location-dot.svg'
 export default function Contact() {
   return (
     <Fragment>
@@ -30,14 +35,14 @@ export default function Contact() {
           <ul>
             <li>
               <a href="mailto:aspetcatering@gmail.com">
-                <i className={classes["fa fa-envelope-o"]}></i>{" "}
+                <img className={classes["small-icons"]} src={envelope}/>
                 aspetcatering@gmail.com
               </a>
             </li>
             <li>
               {" "}
               <a href="tel:+2348033032677">
-                <i className={classes["fa fa-mobile"]} aria-hidden="true"></i>{" "}
+               <img className={classes["small-icons"]} src={phone}/>
                 +234 80 3303 2677
               </a>
             </li>
@@ -45,25 +50,25 @@ export default function Contact() {
               <address>
                 {" "}
                 <a href="https://g.co/kgs/Po6617">
-                  <i className="fa fa-map-marker" aria-hidden="true"></i> Villa 17
+                 <img className={classes["small-icons"]} src={location}/> Villa 17
                   Old aprofim, life camp, Abuja
                 </a>
               </address>
             </li>
-            <div className="social">
+            <div className={classes["social"]}>
               <li>
                 <a href="#">
-                  <i className="fab fa-facebook-f d-block m-auto"></i>
+                 <img className={classes["social-icons"]}  src={facebook}/>
                 </a>
               </li>
               <li>
                 <a href="https://instagram.com/aspet_catering_service_ng?igshid=YmMyMTA2M2Y=">
-                  <i className="fab fa-instagram d-block m-auto"></i>
+                  <img className={classes["social-icons"]}  src={instagram}/>
                 </a>
               </li>
               <li>
                 <a href="https://wa.me/+2348033032677">
-                  <i className="fab fa-whatsapp d-block m-auto"></i>
+                  <img className={classes["social-icons"]}  src={whatsapp}/>
                 </a>
               </li>
             </div>

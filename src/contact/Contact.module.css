@@ -35,3 +35,19 @@
 .col-1-of-3 li a:hover, .col-1-of-3 li a:active, .col-1-of-3 li a:focus {
     color: #1c1b1b;
 }
+.social{
+    display: flex;
+    
+}
+.social li{
+    margin-right: 30px;
+}
+.small-icons{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 2px;
+}
+.social-icons{
+    height: 30px;
+    width: 30px;
+}

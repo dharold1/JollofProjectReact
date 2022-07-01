@@ -1,5 +1,4 @@
 import classes from "./CartItem.module.css";
-import image from "../../assets/images/order/food2.jpg";
 
 const CartItem = (props) => {
   return (
