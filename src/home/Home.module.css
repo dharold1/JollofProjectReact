@@ -1,7 +1,7 @@
 @font-face {
     font-family: jokerman;
     src: url(../assets/fonts/Jokerman-Font/Jokerman-Font.ttf);
-  }
+}
 
 
 .top {
@@ -30,16 +30,91 @@
 }
 
 .header-text h1 {
-    
+
     animation: forwards;
     font-size: 57px;
     font-family: 'jokerman';
+    animation: moveInRight 2s;
 }
-.header-text p{
+
+.header-text p {
     display: block;
     font-family: 'sans-serif';
     font-weight: 700;
     letter-spacing: 0.2rem;
-    animation: moveInRight 2s;
-    font-size: 2rem;
+    animation: moveInLeft 2s;
+    font-size: 30px;
 }
+
+
+@keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(2rem);
+    }
+  }
+@keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(-2rem);
+    }
+  }
+/* 320px 320/16=20em              nb 16px is the default font size we are dividing it by the media query size to convert to ems
+432px 320/16=27em
+480px 480/16 = 30em
+600px 600/16 = 37.5em
+768px = 48em
+900px = 56.25em
+1024px = 64em
+1200px  = 75em
+1800px 112.5em
+*/
+
+
+@media screen and (max-width: 75em) {
+   
+}
+
+
+@media screen and (max-width: 64em) {
+  
+}
+
+@media screen and (max-width: 56.25em) {
+    .header-text h1 {
+        animation: forwards;
+        font-size: 30px;
+        font-family: 'jokerman';
+    }
+    .header-text {
+        width: 70%;
+    }
+}
+
+    @media screen and (max-width: 48em) {
+          
+    }
+
+    @media screen and (max-width: 37.5em) {
+       
+    }
+
+    @media screen and (max-width: 27em) {
+      
+    }
+
+    @media screen and (max-width: 20em) {
+        
+    }
+
+@media screen and (min-width: 112.5em) {}

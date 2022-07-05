@@ -3,6 +3,7 @@ import CartContext from "../../store/cart-context";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import classes from "./Cart.module.css";
+import food from "../../assets/images/order/food2.jpg"
 
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
@@ -25,7 +26,7 @@ const Cart = (props) => {
       {cartCtx.items.map((item) => (
         <CartItem
           id={item.id}
-          image={item.image}
+          image={food}
           title={item.title}
           price={item.price}
           quantity={item.quantity}

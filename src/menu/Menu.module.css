@@ -8,7 +8,7 @@
   margin-bottom: 15rem;
   /* position: relative; */
   background-color: white;
-  height: 100vh;
+  height: 100%;
 }
 
 .menu__container {
@@ -31,4 +31,14 @@
   width: 70px;
   border-bottom: 1px solid #403f3f;
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 75em) {
+
+}
+@media screen and (max-width: 56.25em) {
+  .menu__container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 }

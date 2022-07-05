@@ -12,14 +12,12 @@
   background-color: #bb9b3d;
   border-color: #312910ec;
   font-size: 12px;
-  padding: 3px 5px;
+  padding: 2.5px 4px;
   margin-bottom: 3rem;
   font-weight: 600;
   cursor: pointer;
   margin-top: 5px;
   display: block;
- 
-
 }
 .card-btn:hover, .card-btn:active {
   background-color: #4f4014;

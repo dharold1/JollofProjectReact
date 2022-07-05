@@ -20,7 +20,7 @@
   padding: 0;
 }
 
-.header {
+.navigation {
   position: fixed;
   width: 100%;
   height: 5rem;
@@ -33,6 +33,7 @@
   z-index: 50;
   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); */
 }
+
 .brand {
   text-align: center;
   margin: 10px;
@@ -68,10 +69,11 @@
 }
 .nav-btns{
   list-style: none;
-  padding: 0.8rem;
+  padding: 1px 10px;
   background: linear-gradient(to right bottom, #fb9005, #666666);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  margin-top: 19px;
 }
 
 .nav-btns:hover,
@@ -80,3 +82,59 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.nav-group{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.nav-icon{
+  height: 18px;
+}
+.nav-group:hover{
+  fill: #583200;
+}
+@media screen and (max-width: 75em) {
+   
+}
+
+
+@media screen and (max-width: 64em) {
+  
+}
+
+@media screen and (max-width: 58em) {
+   .nav-text{
+    display: none;
+   }
+   .nav-btns{
+    padding: 1px 10px;
+   }
+}
+
+    @media screen and (max-width: 48em) {
+          
+    }
+
+    @media screen and (max-width: 37.5em) {
+      .navbar-brand {
+        font-size: 25px;
+    
+      }
+      .brand {
+        margin: 0px;
+      }
+      
+      .navbrand-sub {
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (max-width: 27em) {
+      
+    }
+
+    @media screen and (max-width: 20em) {
+        
+    }
+
+@media screen and (min-width: 112.5em) {}
