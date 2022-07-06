@@ -10,10 +10,9 @@
 }
 
 @font-face {
-  font-family: jokerman;
-  src: url(../../assets/fonts/Jokerman-Font/Jokerman-Font.ttf);
+  font-family: poppins;
+  src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
 }
-
 
 * {
   margin: 0;
@@ -64,12 +63,12 @@
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 2px;
-  font-family: "lato";
+  font-family: "poppins";
 
 }
 .nav-btns{
   list-style: none;
-  padding: 1px 10px;
+  padding: 8px 10px;
   background: linear-gradient(to right bottom, #fb9005, #666666);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

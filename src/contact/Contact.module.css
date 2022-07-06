@@ -1,3 +1,8 @@
+@font-face {
+    font-family: poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+  }
+
 .contact {
     background-image: linear-gradient(rgba(225, 225, 225, 0.556), rgba(225, 225, 225, 0.556));
     background-color: #a48d0e;
@@ -5,6 +10,7 @@
     margin-top: 3%;
     display: grid;
     grid-template-columns: repeat(3, .2fr);
+    font-family: "poppins", "sans-serif";
 }
 
 .col-1-of-3 {
@@ -14,7 +20,7 @@
 }
 
 .col-1-of-3 h5 {
-    font-size: .9rem;
+    font-size: 18px;
     font-weight: 600;
     color: #383838;
 }
@@ -22,7 +28,7 @@
 .col-1-of-3 li {
     list-style: none;
     margin-bottom: .7rem;
-    margin-left: -.05rem;
+    margin-left: -30px;
 }
 
 .col-1-of-3 li a {
@@ -35,20 +41,25 @@
 .col-1-of-3 li a:hover, .col-1-of-3 li a:active, .col-1-of-3 li a:focus {
     color: #1c1b1b;
 }
+.small-icons{
+    height: 19px;
+    width: 15px;
+    margin-right: 2px;
+    margin-bottom: -3px;
+}
 .social{
     display: flex;
+    margin-left: -30px;
     
 }
 .social li{
-    margin-right: 30px;
+    margin-right: 15px;
+    margin-left: -10px;
 }
-.small-icons{
-    height: 1.2rem;
-    width: 1.2rem;
-    margin-right: 2px;
-}
+
+
 .social-icons{
-    height: 30px;
+    height: 25px;
     width: 30px;
 }
 @media screen and (max-width: 75em) {
@@ -75,14 +86,19 @@
             display: grid;
             grid-template-columns: auto auto;
         }
+        .col-1-of-3 h5 {
+            font-size: 15px;
+        }
     }
 
     @media screen and (max-width: 27em) {
       
     }
 
-    @media screen and (max-width: 20em) {
-        
+    @media screen and (max-width: 19em) {
+        .contact{
+            padding: 10px;
+        }
     }
 
 @media screen and (min-width: 112.5em) {}

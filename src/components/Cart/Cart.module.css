@@ -1,3 +1,7 @@
+@font-face {
+  font-family: poppins;
+  src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
 .cart-items{
   max-height: 22rem;
   overflow-y: scroll ;
@@ -28,6 +32,7 @@
     font-weight: bold;
     font-size: 1.5rem;
     margin: 1rem 0;
+    font-family: "poppins", "san-serif";
   }
   
   .actions {
@@ -58,6 +63,9 @@
   .actions .button {
     background: linear-gradient(to right bottom, #fb9005, #666666);
     color: white;
+  }
+  .warning{
+    font-family: "poppins";
   }
   /* 320px 320/16=20em              nb 16px is the default font size we are dividing it by the media query size to convert to ems
 432px 320/16=27em

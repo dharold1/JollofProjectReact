@@ -1,10 +1,16 @@
+@font-face {
+    font-family: poppins;
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+  }
+
+
 .card {
-    height: 350px;
+    height: 365px;
     width: 250px;
-    box-shadow: 0.1rem 0.1rem 1rem 0.5rem rgba(64, 63, 63, 0.612);
+    box-shadow: 0.1rem 0.1rem 1rem 0.5rem rgba(89, 88, 88, 0.322);
     /* border: 2px solid grey; */
-    text-align: left;
-    font-family: "sans-serif" , "lato";
+    text-align: center;
+    font-family: "poppins" , "sans-serif";
     margin-bottom: 20px;
     margin-right: 2rem;
 }
@@ -24,6 +30,7 @@ img {
 }
 .card-body p {
     font-size: 13px;
+    font-weight: 600;
 }
 
 .card-btn {
@@ -47,7 +54,7 @@ img {
     transform: scale(1);
     transition: ease-in 200ms;
     outline: 0.2rem solid #403f3f;
-    box-shadow: 0.2rem 0.2rem 2rem 1rem #403f3f;
+    box-shadow: 0.2rem 0.2rem 2rem 1rem #7672726d;
   }
 /* 320px 320/16=20em              nb 16px is the default font size we are dividing it by the media query size to convert to ems
 432px 320/16=27em
@@ -61,14 +68,8 @@ img {
 */
   @media screen and (max-width: 56.25em) {
     .card {
-        height: 300px;
+        height: 320px;
         width: 200px;
-        box-shadow: 0.1rem 0.1rem 1rem 0.5rem rgba(64, 63, 63, 0.612);
-        /* border: 2px solid grey; */
-        text-align: left;
-        font-family: "sans-serif" , "lato";
-        margin-bottom: 20px;
-        margin-right: 2rem;
     }
     
     img {
@@ -87,20 +88,6 @@ img {
     .card-body p {
         font-size: 13px;
     }
-    
-    .card-btn {
-        background-color: #bb9b3d;
-        border-color: #312910ec;
-        font-size: 12px;
-        padding: 3px 5px;
-        margin-bottom: 3rem;
-        font-weight: 600;
-        cursor: pointer;
-        margin-top: 5px;
-        margin-left: 5px;
-    
-    }
-    
 }
 
 @media screen and (max-width: 48em) {
@@ -109,14 +96,9 @@ img {
 
 @media screen and (max-width: 32.5em) {
     .card {
-        height: 250px;
+        height: 300px;
         width: 160px;
-        box-shadow: 0.1rem 0.1rem 1rem 0.5rem rgba(64, 63, 63, 0.612);
         /* border: 2px solid grey; */
-        text-align: left;
-        font-family: "sans-serif" , "lato";
-        margin-bottom: 20px;
-        margin-right: 2rem;
     }
     
     img {
@@ -139,18 +121,12 @@ img {
 
 @media screen and (max-width: 27em) {
     .card {
-        height: 250px;
-        width: 110px;
-        box-shadow: 0.1rem 0.1rem 1rem 0.5rem rgba(64, 63, 63, 0.612);
-        /* border: 2px solid grey; */
-        text-align: left;
-        font-family: "sans-serif" , "lato";
-        margin-bottom: 20px;
-        margin-right: 2rem;
+        height: 320px;
+        width: 260px;
     }
     
     img {
-        height: 90px;
+        height: 150px;
         width: 100%;
     }
     
@@ -159,7 +135,7 @@ img {
         margin-bottom: 5px;
     }
     .card-body{
-        height: 80px;
+        height: 60px;
         padding: 5px;
     }
     .card-body p {
@@ -167,8 +143,10 @@ img {
     }
 }
 
-@media screen and (max-width: 20em) {
-    
+@media screen and (max-width: 19em) {
+    .card {
+        width: 220px;
+    }
 }
 
 @media screen and (min-width: 112.5em) {}
