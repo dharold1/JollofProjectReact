@@ -13,7 +13,12 @@
   background-color: white;
   height: 100%;
 }
-
+.jollof-container{
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  margin: 0px 50px;
+}
 .menu__container {
   justify-content: center;
   margin-top: 3%;

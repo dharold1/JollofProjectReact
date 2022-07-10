@@ -39,7 +39,7 @@
     text-align: right;
   }
   
-  .actions button {
+ .button-alt{
     font: inherit;
     cursor: pointer;
     background-color: transparent;
@@ -48,25 +48,11 @@
     border-radius: 25px;
     margin-left: 1rem;
   }
-  
-  .actions button:hover,
-  .actions button:active {
-    background: linear-gradient(to right bottom, #804b06, #666666);
-    border-color: #5a1a01;
-    color: white;
-  }
-  
-  .actions .button--alt {
-    color: #8a2b06;
-  }
-  
-  .actions .button {
-    background: linear-gradient(to right bottom, #fb9005, #666666);
-    color: white;
-  }
+
   .warning{
     font-family: "poppins";
   }
+  
   /* 320px 320/16=20em              nb 16px is the default font size we are dividing it by the media query size to convert to ems
 432px 320/16=27em
 480px 480/16 = 30em

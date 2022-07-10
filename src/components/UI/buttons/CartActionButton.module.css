@@ -1,0 +1,55 @@
+@font-face {
+    font-family: poppins;
+    src: url(../../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+.button {
+    font-family: "poppins";
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #8a2b06;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    background: linear-gradient(to right bottom, #fb9005, #666666);
+    color: white;
+    max-width: 160px;
+}
+
+button:hover,
+button:active {
+    background: linear-gradient(to right bottom, #804b06, #666666);
+    border-color: #5a1a01;
+    color: white;
+}
+
+@media screen and (max-width: 75em) {}
+
+
+@media screen and (max-width: 64em) {}
+
+@media screen and (max-width: 58em) {
+
+
+}
+
+@media screen and (max-width: 48em) {}
+
+@media screen and (max-width: 37.5em) {
+
+.button {
+        padding: 0.4rem 1rem;
+
+    }
+}
+
+@media screen and (max-width: 27em) {}
+
+@media screen and (max-width: 21.5em) {
+.button {
+        padding: 10px 2px;
+    }
+}
+
+@media screen and (min-width: 112.5em) {}

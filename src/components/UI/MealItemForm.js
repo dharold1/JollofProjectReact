@@ -33,8 +33,10 @@ const MealItemForm = (props) => {
         step="1"
         defaultValue="1"
       />
+      <div className={classes["add-to-cart"]}>
       <button className={classes["card-btn"]}>Add to Cart</button>
       {!QuantityValid && <p>Please enter a valid Quantity</p>}
+      </div>
     </form>
   );
 };

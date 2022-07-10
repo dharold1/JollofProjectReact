@@ -8,6 +8,10 @@
 .input{
   width: 50px;
 }
+.add-to-cart{
+  display: flex;
+  justify-content: center;
+}
 .card-btn {
   background-color: #bb9b3d;
   border-color: #312910ec;
@@ -18,7 +22,7 @@
   cursor: pointer;
   margin-top: 5px;
   display: block;
-  margin-left: 85px;
+  /* margin-left: 85px; */
 }
 .card-btn:hover, .card-btn:active {
   background-color: #4f4014;
@@ -36,7 +40,7 @@
 */
 @media screen and (max-width: 56.25em) {
   .card-btn{
-    margin-left: 65px;
+    /* margin-left: 65px; */
   }
   
 }
@@ -47,20 +51,20 @@
 
 @media screen and (max-width: 32.5em) {
   .card-btn{
-    margin-left: 45px;
+    /* margin-left: 45px; */
   }
 }
 
 @media screen and (max-width: 27em) {
  .card-btn{
-  margin-left: 95px;
+  /* margin-left: 95px; */
  }
 }
 
 @media screen and (max-width: 19em) {
   .card-btn{
     padding: 2px 7px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
   }
 }
 

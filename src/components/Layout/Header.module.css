@@ -28,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2%;
+  padding: 50px 8px;
   z-index: 50;
   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); */
 }
@@ -72,7 +72,7 @@
   background: linear-gradient(to right bottom, #fb9005, #666666);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin-top: 19px;
+  margin-top: 16px;
 }
 
 .nav-btns:hover,
@@ -107,6 +107,7 @@
    }
    .nav-btns{
     padding: 1px 10px;
+    margin-top: 25px;
    }
 }
 
@@ -133,7 +134,14 @@
     }
 
     @media screen and (max-width: 20em) {
+      .navbar-brand {
+        font-size: 22px;
         
+      }
+      
+      .navbrand-sub {
+        font-size: 13px;
+      }
     }
 
 @media screen and (min-width: 112.5em) {}

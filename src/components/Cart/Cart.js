@@ -1,17 +1,25 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import CartContext from "../../store/cart-context";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import classes from "./Cart.module.css";
+import Delivery from "./Delivery";
+import CartActionButton from "../UI/buttons/CartActionButton";
+
 
 const Cart = (props) => {
   const [isDeliveryPage, setisDeliveryPage] = useState(false);
   const cartCtx = useContext(CartContext);
   const totalAmount = cartCtx.totalAmount;
   const cartHasItems = cartCtx.items.length > 0;
-
+  
+  
   const deliveryPageHandler = () =>{
     setisDeliveryPage(true)
+  }
+
+  const backButtonHandler = () => {
+    setisDeliveryPage(false)
   }
   const cartItemRemoveHandler = (id) => {
     cartCtx.removeItem(id)
@@ -54,24 +62,10 @@ const Cart = (props) => {
         </button>
         {!cartHasItems && <h3 className={classes.warning}>Your Cart is Empty</h3>}
         {cartHasItems && (
-          <button onClick={deliveryPageHandler} className={classes.button}>Proceed to Delivery Info</button>
+          <CartActionButton onClick={deliveryPageHandler}>Proceed</CartActionButton>
         )}</div>
       </div>}
-      <div>
-      {/* <div className={classes["cart-title"]}>DELIVERY INFORMATION</div>
-            <div className={classes["delivery-card"]}>
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name"/>
-            <label htmlFor="address">Address:</label>
-            <input type="text" id="address"/>
-            <label htmlFor="city">City:</label>
-            <input type="text" id="city" />
-            <label htmlFor="notable">Notable Spot:</label>
-            <input type="text" id="notable"/>  
-            <a href="" class="btn btn--color2 payment">Proceed to Payment</a>
-            <a href="" class="btn btn--color2 backtocart">Back to Cart</a>
-        </div>     */}
-      </div>
+     {isDeliveryPage && <Delivery onClickBack={backButtonHandler} />}
     </Modal>
   );
 };
