@@ -25,6 +25,10 @@
     margin-right: 20px;
     cursor: pointer;
 }
+.trash-icon{
+    height: 30px !important;
+    width: 20px !important;
+}
 .title {
     display: inline;
     font-size: 14px;

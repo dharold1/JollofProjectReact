@@ -1,4 +1,4 @@
-import { useReducer, useEffect } from "react";
+import { useReducer} from "react";
 import CartContext from "./cart-context";
 
 let defaultCartState = {
@@ -27,10 +27,10 @@ const cartReducer = (state, action) => {
     } else {
       updatedItems = state.items.concat(action.item);
     }
-    const itemList = {
-      items: updatedItems,
-      totalAmount: updatedTotalAmount,
-    };
+    // const itemList = {
+    //   items: updatedItems,
+    //   totalAmount: updatedTotalAmount,
+    // };
     // localStorage.setItem("cart", JSON.stringify(itemList));
     // let cartLocalStorage = JSON.parse(localStorage.getItem("cart"));
     // console.log(cartLocalStorage);
@@ -62,6 +62,28 @@ const cartReducer = (state, action) => {
       totalAmount: updatedTotalAmount,
     };
   }
+  if (action.type === 'DELETE'){
+    const existingItemIndex = state.items.findIndex(
+      (item) => item.id === action.id
+    );
+    const existingCartItem = state.items[existingItemIndex];
+    const updatedTotalAmount = state.totalAmount - existingCartItem.price * existingCartItem.quantity;
+    let updatedItems;
+
+    if (existingCartItem.quantity > 1) {
+      updatedItems = state.items.filter((item) => item.id !== action.id);
+    } 
+
+    return {
+      items: updatedItems,
+      totalAmount: updatedTotalAmount,
+    };
+    
+  }
+  if (action.type === 'CLEAR'){
+    return defaultCartState;
+    
+  }
   return defaultCartState;
 };
 const CartProvider = (props) => {
@@ -80,12 +102,19 @@ const CartProvider = (props) => {
   const removeItemHandler = (id) => {
     dispatchCartAction({ type: "REMOVE", id: id });
   };
-
+const deleteItemHandler = (id) =>  {
+  dispatchCartAction({type: "DELETE", id: id})
+}
+  const clearCartHandler = () => {
+    dispatchCartAction({type: "CLEAR"})
+  }
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
     addItem: addItemHandler,
     removeItem: removeItemHandler,
+    clearCart: clearCartHandler,
+    deleteItem: deleteItemHandler
   };
   return (
     <CartContext.Provider value={cartContext}>

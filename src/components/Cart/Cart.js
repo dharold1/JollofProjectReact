@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState} from "react";
 import CartContext from "../../store/cart-context";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
@@ -24,7 +24,9 @@ const Cart = (props) => {
   const cartItemRemoveHandler = (id) => {
     cartCtx.removeItem(id)
   };
-
+  const cartItemDeleteHandler = (id) => {
+    cartCtx.deleteItem(id)
+  };
   const cartItemAddHandler = (item) => {
     cartCtx.addItem({
       ...item,
@@ -43,6 +45,7 @@ const Cart = (props) => {
           quantity={item.quantity}
           onRemove={cartItemRemoveHandler.bind(null, item.id)}
           onAdd={cartItemAddHandler.bind(null, item)}
+          onDelete={cartItemDeleteHandler.bind(null, item.id)}
         />
       ))}
     </ul>
@@ -65,7 +68,7 @@ const Cart = (props) => {
           <CartActionButton onClick={deliveryPageHandler}>Proceed</CartActionButton>
         )}</div>
       </div>}
-     {isDeliveryPage && <Delivery onClickBack={backButtonHandler} />}
+     {isDeliveryPage && <Delivery onHide={props.onHidecart} onClickBack={backButtonHandler} />}
     </Modal>
   );
 };

@@ -37,6 +37,9 @@
   text-align: center;
   margin: 10px;
 }
+.brand a{
+  text-decoration: none;
+}
 .navbar-brand {
   font-size: 28px;
   font-family: 'monoton', sans-serif;

@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: auto;
     font-family: "poppins";
+    max-height: 25rem;
+    overflow-y: scroll;
   }
   .title{
     text-align: center;
@@ -51,6 +53,11 @@
 }
 .itemview{
     display: none;
+}
+.note{
+  color: #a3a2a2;
+  font-size: 15px;
+  text-align: center;
 }
 @media screen and (max-width: 75em) {}
 

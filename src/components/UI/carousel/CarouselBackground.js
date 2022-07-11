@@ -19,13 +19,7 @@ const CarouselBackground = (props) => {
       alt="Second slide"
     />
   </Carousel.Item>
-  {/* <Carousel.Item>
-    <img
-      className="d-block w-100 carousel-img"
-      src="https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/bg%2Fjollof%20rice%20background%201.jpg?alt=media&token=6c930351-a473-49a0-9b84-b0a8dbb48303"
-      alt="third slide"
-    />
-  </Carousel.Item> */}
+ 
   <Carousel.Item>
     <img
       className="d-block w-100 carousel-img"
@@ -40,20 +34,7 @@ const CarouselBackground = (props) => {
       alt="fifth slide"
     />
   </Carousel.Item>
-  {/* <Carousel.Item>
-    <img
-      className="d-block w-100 carousel-img"
-      src="https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/bg%2Fjollof%20rice%20with%20chicken%20background2.jpg?alt=media&token=67100bca-30d6-4b77-bb54-cedc90e421bf"
-      alt="sixth slide"
-    />
-  </Carousel.Item>   */}
-  {/* <Carousel.Item>
-    <img
-      className="d-block w-100 carousel-img"
-      src="https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/bg%2Fjollof%20with%20chicken%204%20background%20.jpg?alt=media&token=85d5d24d-d467-44a6-90da-9b57d4b553cb"
-      alt="sixth slide"
-    />
-  </Carousel.Item> */}
+ 
 </Carousel>
     </div>
   );

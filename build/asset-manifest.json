@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5b8084e.css",
-    "main.js": "/static/js/main.a1c279fe.js",
+    "main.css": "/static/css/main.f645c6dd.css",
+    "main.js": "/static/js/main.e700d043.js",
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.3c813f59f8b9c1566f24.ttf",
     "static/media/Jokerman-Font.ttf": "/static/media/Jokerman-Font.edec23402db3b372976c.ttf",
     "static/media/Lato-Black.ttf": "/static/media/Lato-Black.57dee8aface5572f9101.ttf",
@@ -16,11 +16,11 @@
     "static/media/location-dot.svg": "/static/media/location-dot.6c956fbe33d40b9e7a73664693e254a8.svg",
     "static/media/mobile-screen.svg": "/static/media/mobile-screen.43c81f648a91f9a59625c79928398c45.svg",
     "static/media/facebook-f.svg": "/static/media/facebook-f.bd6d9984e2e2a9baa54531f12ed5401d.svg",
-    "main.a5b8084e.css.map": "/static/css/main.a5b8084e.css.map",
-    "main.a1c279fe.js.map": "/static/js/main.a1c279fe.js.map"
+    "main.f645c6dd.css.map": "/static/css/main.f645c6dd.css.map",
+    "main.e700d043.js.map": "/static/js/main.e700d043.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5b8084e.css",
-    "static/js/main.a1c279fe.js"
+    "static/css/main.f645c6dd.css",
+    "static/js/main.e700d043.js"
   ]
 }

@@ -5,7 +5,6 @@ import Home from "./home/Home";
 import Contact from "./contact/Contact";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./store/CartProvider";
-
 function App() {
 
   const [cartVisisble, setcartVisisble] = useState(false);
@@ -25,7 +24,7 @@ function App() {
         <Menu />
       </main>
       <footer>
-        <Contact />
+        <Contact/>
       </footer>
     </CartProvider>
   );

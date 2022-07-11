@@ -6,19 +6,20 @@ import instagram from '../assets/icons/instagram-square.svg'
 import envelope from '../assets/icons/envelope.svg'
 import phone from '../assets/icons/mobile-screen.svg'
 import location from '../assets/icons/location-dot.svg'
+import { HashLink as Link } from "react-router-hash-link";
 export default function Contact() {
   return (
     <Fragment>
-      <div className={classes.contact}>
+      <div className={classes.contact} id="contact">
         <div className={classes["col-1-of-3"]}>
           <h5>Company</h5>
           <ul>
             <li>
-              <a href="#"> About Us </a>
+              <Link to="#home"> About Us </Link>
             </li>
             <li>
               {" "}
-              <a href="#"> Contact Us </a>
+              <Link to="#contact"> Contact Us </Link>
             </li>
           </ul>
         </div>
@@ -26,7 +27,7 @@ export default function Contact() {
           <h5>Features</h5>
           <ul>
             <li>
-              <a href="#"> Place Order </a>
+              <Link to="#menu"> Place Order </Link>
             </li>
           </ul>
         </div>
