@@ -111,8 +111,7 @@ const CartProvider = (props) => {
   useEffect(() => {
     sessionStorage.setItem("cart", JSON.stringify(cartState.items));
     sessionStorage.setItem("total", JSON.stringify(cartState.totalAmount));
-    console.log(cartState)
-  }, [cartState.items]);
+  }, [cartState.items, cartState.totalAmount]);
   const addItemHandler = (item) => {
     dispatchCartAction({ type: "ADD", item: item });
   };
