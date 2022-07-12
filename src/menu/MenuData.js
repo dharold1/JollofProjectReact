@@ -7,25 +7,25 @@ export const foodData = [
     },
     {
         id: 2,
-        title: "Full Chicken (1 piece)",
+        title: "Full Chicken lap(1 piece)",
         price: 1500,
         img: "https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/Menu%2Ffull%20chicken.jpg?alt=media&token=29eef9fa-bf57-40a5-81e9-f026e174b215"
     },
     {
         id: 3,
-        title: "Half chicken (1 piece)",
+        title: "Half chicken lap(1 piece)",
         price: 1000,
         img: "https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/Menu%2Fhalf%20chicken.jpg?alt=media&token=53cfe994-d8e0-4798-9fae-330b7efcc017"
     },
     {
         id: 4,
-        title: "Grilled Chicken (big 1 piece)",
+        title: "Grilled Chicken big(1 piece)",
         price: 1500,
         img: "https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/Menu%2Fgrilled%20chicken%202.jpg?alt=media&token=67bc8f0f-453b-45b5-af17-98ffdb239a21"
     },
     {
         id: 5,
-        title: "Grilled Chicken (Medium i piece)",
+        title: "Grilled Chicken medium(1 piece)",
         price: 1000,
         img: "https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/Menu%2FGrilled%20chicken.jpg?alt=media&token=1f8cce18-1b01-48ee-93b6-3994b89e9a84"
     },
