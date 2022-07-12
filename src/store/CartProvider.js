@@ -2,8 +2,8 @@ import { useReducer, useEffect} from "react";
 import CartContext from "./cart-context";
 
 let defaultCartState = {
-  items: JSON.parse(sessionStorage.getItem("cart") || "[]"),
-  totalAmount: JSON.parse(sessionStorage.getItem("total") || "0"),
+  items: JSON.parse(localStorage.getItem("cart") || "[]"),
+  totalAmount: JSON.parse(localStorage.getItem("total") || "0"),
 };
 // let clearedCartState = {
 //   items: sessionStorage.setItem("cart", JSON.stringify("[]")),
@@ -89,13 +89,13 @@ const cartReducer = (state, action) => {
     
   }
   if (action.type === 'CLEAR'){
-    sessionStorage.setItem("cart", JSON.stringify([])); 
-    sessionStorage.setItem("total", JSON.stringify(0));
-    let sessionNewCart = {
-      items: JSON.parse(sessionStorage.getItem("cart") || "[]"),
-      totalAmount: JSON.parse(sessionStorage.getItem("total") || "0"),
+    localStorage.setItem("cart", JSON.stringify([])); 
+    localStorage.setItem("total", JSON.stringify(0));
+    let localNewCart = {
+      items: JSON.parse(localStorage.getItem("cart") || "[]"),
+      totalAmount: JSON.parse(localStorage.getItem("total") || "0"),
     }
-    return sessionNewCart;
+    return localNewCart;
     
   }
   return defaultCartState;
@@ -109,8 +109,8 @@ const CartProvider = (props) => {
     defaultCartState
   );
   useEffect(() => {
-    sessionStorage.setItem("cart", JSON.stringify(cartState.items));
-    sessionStorage.setItem("total", JSON.stringify(cartState.totalAmount));
+    localStorage.setItem("cart", JSON.stringify(cartState.items));
+    localStorage.setItem("total", JSON.stringify(cartState.totalAmount));
   }, [cartState.items, cartState.totalAmount]);
   const addItemHandler = (item) => {
     dispatchCartAction({ type: "ADD", item: item });
