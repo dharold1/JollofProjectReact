@@ -56,7 +56,12 @@
 }
 .note{
   color: #a3a2a2;
-  font-size: 15px;
+  font-size: 13px;
+  text-align: center;
+}
+.email-note{
+  color: #a3a2a2;
+  font-size: 13px;
   text-align: center;
 }
 @media screen and (max-width: 75em) {}

@@ -22,7 +22,7 @@ const Delivery = (props) => {
   const  sendEmail = async (e) => {
     e.preventDefault();
     setisSubmitting(true)
-    await emailjs.sendForm('service_jj8txpc', 'template_ktcupy3', deliveryForm.current, '_GF5ZlXbjiuVLCV13')
+    await emailjs.sendForm('service_ywf5vks', 'template_7vpkxld', deliveryForm.current, 'MOPwEm-kJMjscwt6W')
       .then(() => {
         sethasSubmitted(true)
          return MySwal.fire(
@@ -57,6 +57,8 @@ const Delivery = (props) => {
         <input type="text" id="name" name="user_name" required />
         <label htmlFor="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone_number" required />
+        <label htmlFor="email">Email: <span className={classes["email-note"]}>***This is required so you can receive an order receipt for confirmation of order***</span></label> 
+        <input type="email" id="email" name="user_email" />
         <label htmlFor="city">City:</label>
         <input type="text" id="city" name="user_city" />
         <label htmlFor="address">Address:</label>
