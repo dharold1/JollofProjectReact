@@ -8,7 +8,7 @@ const Home = () => {
       <CarouselBackground/>
         <div className={classes['header-text']}>
         <h1>ENJOY JOLLOF RICE AT ITS BEST</h1>
-        <p>Get your party jollof rice delivered to you from your comfort zone</p>
+        <p>Get your party jollof rice delivered to you in your comfort zone</p>
         </div>
       </section>
     </header>
