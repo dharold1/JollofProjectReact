@@ -63,13 +63,13 @@ export const foodData = [
         id: 11,
         title: "MoiMoi 1",
         price: 500,
-        img: "https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/Menu%2Fmoimoi2.jpg?alt=media&token=9727d31d-66d3-4d9c-903d-fde93d8d346d"
+        img: "https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/Menu%2FIMG-20220721-WA0003.jpg?alt=media&token=44c3bdd6-7291-4f25-a62a-082d0fbb48f2"
     },
     {
         id: 12,
         title: "Salad",
         price: 500,
-        img: "https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/Menu%2Fsallad.jpg?alt=media&token=4295ead7-af30-441c-9c48-ab6b6281829b"
+        img: "https://firebasestorage.googleapis.com/v0/b/aspetfoods.appspot.com/o/Menu%2FIMG-20220723-WA0003.jpg?alt=media&token=6dcb655a-4192-4f9c-9c70-a84895cc47ed"
     },
     {
         id: 13,
