@@ -1,33 +1,43 @@
-import React, {useState} from "react";
-import Header from "./components/Layout/Header";
-import Menu from "./menu/Menu";
-import Home from "./home/Home";
-import Contact from "./contact/Contact";
-import Cart from "./components/Cart/Cart";
-import CartProvider from "./store/CartProvider";
-function App() {
+import React, { useState, useEffect } from "react";
+import NewTodo from "./components/NewTodo/NewTodo";
+import Todos from "./components/Todos/Todos";
+import { db } from "./firebase";
+import {uid} from "uid";
+import { set, ref, onValue } from "firebase/database";
+// import { dataref } from "./firebase";
 
-  const [cartVisisble, setcartVisisble] = useState(false);
+const App = () => {
+  const [todos, setTodos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    onValue(ref(db),  (snapshot) => {
+      setTodos([])
+      const data =  snapshot.val();
+      if (data !== null) {
+        Object.values(data).map((todo) => {
+          setTodos((oldArray) => [...oldArray, todo]);
+          setIsLoading(false);
+        });
+      }else {
+        setIsLoading(false)
+      }
+    });
+  }, []);
 
-  const showCartHandler = ()=>{
-    setcartVisisble(true);
-  }
-  const hideCartHandler = ()=>{
-    setcartVisisble(false)
-  }
+  const addTodoHandler = (todo) => {
+    const uuid = uid();    set(ref(db, `/${uuid}`),{
+      todo,
+      uuid
+    })
+    
+  };
+
   return (
-    <CartProvider>
-      <Header onShowCart={showCartHandler} />
-      {cartVisisble && <Cart onHidecart={hideCartHandler} />}
-      <main>
-        <Home />
-        <Menu />
-      </main>
-      <footer>
-        <Contact/>
-      </footer>
-    </CartProvider>
+    <div>
+      <NewTodo onAddTodo={addTodoHandler} />
+      <Todos items={todos} loading={isLoading}  />
+    </div>
   );
-}
+};
 
 export default App;
