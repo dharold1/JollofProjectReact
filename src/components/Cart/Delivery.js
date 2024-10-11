@@ -14,6 +14,10 @@ const Delivery = (props) => {
 
   const MySwal = withReactContent(Swal)
   const cartCtx = useContext(CartContext);
+const serviceKey = process.env.REACT_APP_SERVICE_KEY
+const templateKey = process.env.REACT_APP_TEMPLATE_KEY
+const publicKey = process.env.REACT_APP_PUBLIC_KEY
+
 
   const [isSubmitting, setisSubmitting] = useState(false);
   const [hasSubmitted, sethasSubmitted] = useState(false);
@@ -22,7 +26,7 @@ const Delivery = (props) => {
   const  sendEmail = async (e) => {
     e.preventDefault();
     setisSubmitting(true)
-    await emailjs.sendForm('service_ywf5vks', 'template_7vpkxld', deliveryForm.current, 'MOPwEm-kJMjscwt6W')
+    await emailjs.sendForm('service_3rvdb8c', 'template_vix3bk4', deliveryForm.current, 'DrCsxZ889_LZ9F3ep')
       .then(() => {
         sethasSubmitted(true)
          return MySwal.fire(
