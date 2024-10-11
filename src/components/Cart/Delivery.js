@@ -26,7 +26,7 @@ const publicKey = process.env.REACT_APP_PUBLIC_KEY
   const  sendEmail = async (e) => {
     e.preventDefault();
     setisSubmitting(true)
-    await emailjs.sendForm('service_3rvdb8c', 'template_vix3bk4', deliveryForm.current, 'DrCsxZ889_LZ9F3ep')
+    await emailjs.sendForm(serviceKey, templateKey, deliveryForm.current,publicKey)
       .then(() => {
         sethasSubmitted(true)
          return MySwal.fire(
